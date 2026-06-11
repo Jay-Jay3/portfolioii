@@ -227,7 +227,7 @@ p{
     display: inline-block;
     width: fit-content;
     padding: 6px 6px;
-    border-radius: 50%;
+    border-radius: 16px;
     margin: 12px;
     border: 1px solid var(--l-secondary-color);
     color: var(--l-text-color);
