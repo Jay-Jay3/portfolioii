@@ -1,0 +1,236 @@
+:root {
+    --l-page-color: #0d0d0d;
+    --l-primary-color: #f7f6f6;
+    --l-secondary-color: #797979a8;
+    --l-accent-color: #f7f6f699;
+    --l-background-color: #353333;
+    --l-text-color: #d6d6d6e8;
+    --l-text-colorI: #ffffffef;
+    --font-f: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --font-fs: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+    background-color: var(--l-page-color);
+    padding:0% 5%;
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 100%;
+    scroll-snap-type: y mandatory;
+}
+
+body > section{
+    height: 100dvh;
+    padding-top: 10dvh;
+    scroll-snap-align: start;
+    margin-bottom: 48px;
+}
+
+.header {
+    display: flex;
+    position: fixed;
+    width: 90%;
+    height: 10dvh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav{
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+    border-radius: 1rem;
+    border: 0.5px solid var(--l-secondary-color);
+    padding: 12px;
+    background-color: var(--l-background-color);
+}
+
+.nav > a:hover{
+    border-bottom: 2px solid #ffffff ;
+    padding: 6px 18px;
+    display: inline;
+}
+
+.style-boxI{
+    width: fit-content;
+    /* height: 100%; */
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    border-radius: 50%;
+    border: 2px solid var(--l-accent-color);
+    color: white;
+    background-color: var(--l-secondary-color);
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+    padding: 6px 12px;
+    /* margin: 0px 6px; */
+    font-weight: 600;
+    font-size: 1rem; 
+    font-family: var(--font-fs);   
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: var(--font-fs);
+    color: var(--l-text-color);
+    /* letter-spacing: 1.2px; */
+    margin: 0px;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: -2px;
+    text-align: center;
+    font-family: var(--font-fs);
+    color: var(--l-primary-color);
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: var(--font-fs);
+    color: var(--l-text-colorI);
+    letter-spacing: -0.5px;
+}
+
+p{
+    font-style: sans-serif;
+    font-size: 1.1rem;
+    margin: 0px;
+    font-weight: 100;
+    font-family: var(--font-fs);
+    line-height: 1.6;
+    color: var(--l-primary-color);
+
+}
+
+.body{
+    width: fill;
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    width: 60%;
+}
+
+.right {
+    width: 30%;
+    height: 70dvh;
+}
+
+.left > *{
+    margin: 12px 0px;
+}
+
+.left > p{
+    display: inline-block;
+    padding-bottom: 12px;
+}
+
+
+.right {
+    width: 30%;
+}
+
+
+
+.style-box{
+    width: fit-content;
+    padding: 10px 12px;
+    border-radius: 0.6rem;
+    margin-left: 0px;
+    border: 1px solid white;
+    color: var(--l-text-color);
+    font-family: var(--font-fs);
+    background-color: var(--l-secondary-color);
+}
+
+.lower_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.lower_body > *{
+    margin: 12px 0px ;
+}
+
+
+
+.second_page_title {
+    margin: 12px 0px;
+
+}
+
+.second_page_title > * {
+    margin: 24px;
+    justify-self: center;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.box{
+    width: 20%;
+    height: fit-content;
+    padding: 6px;
+    border:1px solid var(--l-secondary-color) ;
+    border-radius: 1rem;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.box > p{
+    border-bottom: 0.5px solid var(--l-background-color);
+    margin: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+}
+
+.box > .style-box{
+    display: block;
+    justify-content: center;
+    align-items: center; 
+}
+
+.box2{
+    padding: 12px;
+    border-radius: 1rem;
+    background-color: #353333;
+    width: fit-content;
+    display: flex;
+}
+
+.box2 > p {
+    margin: 6px 12px;
+}
+
+.sbox{
+    display: inline-block;
+    width: fit-content;
+    padding: 6px 6px;
+    border-radius: 50%;
+    margin: 12px;
+    border: 1px solid var(--l-secondary-color);
+    color: var(--l-text-color);
+    font-family: var(--font-fs);
+    background-color: var(--l-background-color);
+}
